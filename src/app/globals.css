@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #C59B27;
+    --gold-secondary: #D4AF37;
+    --gold-dark: #996515;
+    --gold-light: #F7EFD8;
+    --moroccan-dark: #1E1B18;
+    --moroccan-cream: #FDFBF7;
+    --moroccan-sand: #F7F3EB;
+  }
+
+  body {
+    background-color: #FAF7F2;
+    color: #26211C;
+    font-family: 'Amiri', 'Cairo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+}
+
+/* Moroccan Arch & Arabesque Patterns */
+.bg-moroccan-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#C59B27 0.75px, transparent 0.75px), radial-gradient(#C59B27 0.75px, #FAF7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.07;
+}
+
+.bg-moroccan-dark-pattern {
+  background-color: #191614;
+  background-image: radial-gradient(#D4AF37 0.85px, transparent 0.85px), radial-gradient(#D4AF37 0.85px, #191614 0.85px);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+/* Luxury Gold Gradients */
+.gold-gradient {
+  background: linear-gradient(135deg, #B8860B 0%, #D4AF37 35%, #F3E5AB 70%, #AA771C 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #996515 0%, #C59B27 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.gold-shadow {
+  box-shadow: 0 10px 30px -10px rgba(184, 134, 11, 0.25);
+}
+
+/* Subtle Moroccan Arch Border */
+.moroccan-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.moroccan-card:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 16px 32px -8px rgba(184, 134, 11, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Keypad Shake Animation */
+@keyframes pin-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+.animate-pin-shake {
+  animation: pin-shake 0.4s ease-in-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5EFE6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8860B;
+}

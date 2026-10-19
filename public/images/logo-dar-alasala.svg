@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="70%" stop-color="#FDF6E5" />
+      <stop offset="100%" stop-color="#EEDCA2" />
+    </radialGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#996515" />
+      <stop offset="25%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#FFF0B3" />
+      <stop offset="75%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#8C5810" />
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A4C07" />
+      <stop offset="50%" stop-color="#B8860B" />
+      <stop offset="100%" stop-color="#5E3802" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#8C5810" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Medallion -->
+  <circle cx="120" cy="120" r="114" fill="url(#bgGrad)" stroke="url(#goldRing)" stroke-width="4" filter="url(#shadow)"/>
+  
+  <!-- Outer Ornate Star-Points (Moroccan 8-pointed star hint) -->
+  <circle cx="120" cy="120" r="105" fill="none" stroke="#D4AF37" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="120" cy="120" r="98" fill="none" stroke="#B8860B" stroke-width="0.8"/>
+
+  <!-- Ornate Moroccan Crown Arch at Top -->
+  <g id="crown" transform="translate(120, 56) scale(0.95)">
+    <!-- Base band -->
+    <rect x="-38" y="0" width="76" height="5" rx="2.5" fill="url(#goldRing)"/>
+    <!-- Jewels on base -->
+    <circle cx="-26" cy="2.5" r="1.5" fill="#FFFFFF"/>
+    <circle cx="-13" cy="2.5" r="1.5" fill="#8C5810"/>
+    <circle cx="0" cy="2.5" r="2" fill="#FFFFFF"/>
+    <circle cx="13" cy="2.5" r="1.5" fill="#8C5810"/>
+    <circle cx="26" cy="2.5" r="1.5" fill="#FFFFFF"/>
+    <!-- Crown Spikes -->
+    <path d="M -36 0 L -30 -18 L -20 -6 L -10 -22 L 0 -8 L 10 -22 L 20 -6 L 30 -18 L 36 0 Z" fill="url(#goldRing)"/>
+    <!-- Pearls on crown tips -->
+    <circle cx="-30" cy="-19" r="2.5" fill="#FFFFFF" stroke="#B8860B" stroke-width="0.8"/>
+    <circle cx="-10" cy="-23" r="3" fill="#FFFFFF" stroke="#B8860B" stroke-width="0.8"/>
+    <circle cx="0" cy="-8" r="2" fill="#FFFFFF"/>
+    <circle cx="10" cy="-23" r="3" fill="#FFFFFF" stroke="#B8860B" stroke-width="0.8"/>
+    <circle cx="30" cy="-19" r="2.5" fill="#FFFFFF" stroke="#B8860B" stroke-width="0.8"/>
+  </g>
+
+  <!-- Central Brand Calligraphy / Monogram Motif -->
+  <!-- Elegant Arabic Arch Motif -->
+  <path d="M 64 128 C 64 88, 176 88, 176 128 C 176 136, 170 140, 160 140 C 150 140, 146 132, 146 128 C 146 102, 94 102, 94 128 C 94 132, 90 140, 80 140 C 70 140, 64 136, 64 128 Z" fill="url(#goldRing)" opacity="0.15"/>
+
+  <!-- Brand Name in Arabic -->
+  <text x="120" y="124" 
+        font-family="'Amiri', 'Traditional Arabic', 'Cairo', serif" 
+        font-size="28" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="url(#goldText)" 
+        letter-spacing="0.5">
+    دار الأصالة
+  </text>
+
+  <!-- Decorative Moroccan Flourish Divider -->
+  <g transform="translate(120, 137)">
+    <line x1="-55" y1="0" x2="-12" y2="0" stroke="url(#goldRing)" stroke-width="1.2"/>
+    <polygon points="-8,-3 -3,0 -8,3" fill="#B8860B"/>
+    <circle cx="0" cy="0" r="3" fill="#D4AF37"/>
+    <circle cx="0" cy="0" r="1.2" fill="#FFFFFF"/>
+    <polygon points="8,-3 3,0 8,3" fill="#B8860B"/>
+    <line x1="12" y1="0" x2="55" y2="0" stroke="url(#goldRing)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Subtitle Arabic -->
+  <text x="120" y="156" 
+        font-family="'Cairo', -apple-system, sans-serif" 
+        font-size="10.5" 
+        font-weight="700" 
+        text-anchor="middle" 
+        fill="#996515" 
+        letter-spacing="1">
+    للحلويات المغربية الفاخرة
+  </text>
+
+  <!-- Year / Heritage Tag -->
+  <text x="120" y="174" 
+        font-family="'Amiri', serif" 
+        font-size="8.5" 
+        font-weight="600" 
+        text-anchor="middle" 
+        fill="#8C5810" 
+        letter-spacing="2">
+    ★ فاس • 1948 ★
+  </text>
+
+  <!-- Bottom Arch Curve Ribbon Text (French Elegance) -->
+  <text x="120" y="194" 
+        font-family="-apple-system, 'Segoe UI', sans-serif" 
+        font-size="6.5" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="#6E4400" 
+        letter-spacing="1.5">
+    PÂTISSERIE ROYALE MAROCAINE
+  </text>
+
+  <!-- Tiny Decorative Accent Dots around perimeter -->
+  <circle cx="120" cy="18" r="2" fill="#D4AF37"/>
+  <circle cx="120" cy="222" r="2" fill="#D4AF37"/>
+  <circle cx="18" cy="120" r="2" fill="#D4AF37"/>
+  <circle cx="222" cy="120" r="2" fill="#D4AF37"/>
+</svg>
